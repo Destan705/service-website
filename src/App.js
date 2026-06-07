@@ -21,16 +21,15 @@ function App() {
         style={{ backgroundColor: "#f5f5dc" }}
       >
         <div className="container-fluid px-4">
-          <a
+          <div
             className="navbar-brand d-flex 
                       align-items-center gap-2"
-            href="#"
           >
             <span>
               <Smile color="#0D9488" size={32} />
             </span>
             <span className="brand-name">Bright Smiles Dental</span>
-          </a>
+          </div>
           <ul
             className="navbar-nav ms-auto d-flex
                        flex-row align-items-center 

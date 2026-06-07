@@ -9,8 +9,8 @@ function Services() {
         Modern dentistry with a personal touch. We provide comprehensive dental
         care for the whole family in a comfortable, welcoming environment.
       </p>
-      <div className="container">
-        <div className="row g-1 justify-content-center">
+      <div className="container-fluid px-4">
+        <div className="row g-3 justify-content-center">
           <div className="col-md-3">
             <div className="col-md-auto">
               <div className="service-card">

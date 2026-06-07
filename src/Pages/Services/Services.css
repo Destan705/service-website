@@ -32,7 +32,8 @@
   height: 100%;
   text-align: left;
   border: 1px solid #eee;
-  max-width: 280px;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .service-card-title {
