@@ -1,0 +1,36 @@
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.hero-section .container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.hero-section .row {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+.hero-image {
+  width: 650px;
+  height: 650px;
+}
