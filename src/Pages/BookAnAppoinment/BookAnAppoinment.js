@@ -1,6 +1,17 @@
 import "./BookAnAppoinment.css";
 import TeethPic from "./../../images/Teeth.png";
+import { useNavigate } from "react-router-dom";
+
 function BookAnAppointment() {
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    // add the redirect here to home apge
+    navigate("/");
+  }
+
   return (
     <div className="booking-page">
       <div className="booking-container">
@@ -12,13 +23,14 @@ function BookAnAppointment() {
           </p>
 
           <div className="booking-card">
-            <div className="row g-3">
+            <form className="row g-3" onSubmit={handleSubmit}>
               <div className="col-md-6">
                 <label className="form-label">Full Name</label>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Destan"
+                  required
                 />
               </div>
 
@@ -28,6 +40,7 @@ function BookAnAppointment() {
                   type="email"
                   className="form-control"
                   placeholder="destan@example.com"
+                  required
                 />
               </div>
 
@@ -37,6 +50,7 @@ function BookAnAppointment() {
                   type="tel"
                   className="form-control"
                   placeholder="555 (679) 9011"
+                  required
                 />
               </div>
 
@@ -46,25 +60,26 @@ function BookAnAppointment() {
                   type="text"
                   className="form-control"
                   placeholder="1,2,3 etc."
+                  required
                 />
               </div>
 
               <div className="col-md-6">
                 <label className="form-label">Preferred Time</label>
-                <input type="time" className="form-control" />
+                <input type="time" className="form-control" required />
               </div>
 
               <div className="col-md-6">
                 <label className="form-label">Preferred Date</label>
-                <input type="date" className="form-control" />
+                <input type="date" className="form-control" required />
               </div>
 
               <div>
-                <button className="btn booking-btn w-100">
+                <button type="submit" className="btn booking-btn w-100">
                   Request Appointment
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
         <div className="booking-image-section">
