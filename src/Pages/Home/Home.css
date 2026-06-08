@@ -1,6 +1,7 @@
 .hero-section {
   background-color: #f5f5f5;
   padding: 60px 0;
+  min-height: 100vh; /*vertical height - 100% of the full visual height of the screen*/
 }
 
 .hero-section .container {

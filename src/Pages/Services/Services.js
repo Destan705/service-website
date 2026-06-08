@@ -10,16 +10,18 @@ function Services() {
         care for the whole family in a comfortable, welcoming environment.
       </p>
       <div className="container-fluid px-4">
-        <div className="row g-3 justify-content-center">
-          <div className="col-md-3">
+        <div className="row g-4 justify-content-center">
+          {/* 3 3/ 12 */}
+          <div className="col-md-2">
             <div className="col-md-auto">
               <div className="service-card">
                 <Link to="/preventive-care" className="card-link">
                   <Smile color="#0D9488" size={32} />
-                  <h3 className="service-card-title">Dental Fillings</h3>
+                  <h3 className="service-card-title">Preventive Treatments</h3>
                   <p className="service-card-p">
-                    Used to treat cavities or minor chips by cleaning out decay
-                    and filling the space with composite resin or amalgam.
+                    These services are designed to protect your natural teeth,
+                    gums, and oral health, preventing the need for more complex
+                    procedures later on.
                   </p>
                   <span className="service-price">From $120</span>
                 </Link>
@@ -27,7 +29,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-2">
             <div className="col-md-auto">
               <div className="service-card">
                 <Link to="/cosmetic-procedures" className="card-link">
@@ -45,7 +47,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-2">
             <div className="col-md-auto">
               <div className="service-card">
                 <Link to="/restorative-care" className="card-link">
@@ -63,7 +65,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-2">
             <div className="col-md-auto">
               <div className="service-card">
                 <Link to="/emergency-care" className="card-link">

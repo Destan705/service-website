@@ -1,7 +1,7 @@
 .team-page {
   background-color: #f5f5f5;
   padding: 150px 40px;
-  height: fit-content;
+  min-height: 100vh;
 }
 
 body {
