@@ -1,6 +1,6 @@
+import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import RootCanal from "./Pages/RootCanal/RootCanal";
 import Cleaning from "./Pages/Cleaning/Cleaning";
 import ServiceSelection from "./Pages/ServiceSelection/ServiceSelection";
 import BookAnAppointment from "./Pages/BookAnAppoinment/BookAnAppoinment";
@@ -67,7 +67,6 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/root-canal" element={<RootCanal />} />
         <Route path="/cleaning" element={<Cleaning />} />
         <Route path="/service-selection" element={<ServiceSelection />} />
         <Route path="/book-an-appointment" element={<BookAnAppointment />} />
@@ -79,6 +78,9 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/our-team" element={<OurTeam />} />
       </Routes>
+      <footer className="made-by-footer">
+        <p>Made by Destan Cakar</p>
+      </footer>
     </BrowserRouter>
   );
 }

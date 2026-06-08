@@ -86,6 +86,7 @@ function BookAnAppointment() {
           <img src={TeethPic} alt="Dental clinic" className="teeth-image" />
         </div>
       </div>
+      <p>Made by Destan Cakar</p>
     </div>
   );
 }
